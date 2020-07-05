@@ -10,7 +10,7 @@
 int main()
 {
 	char * hello = "hello from client";
-	struck sockaddr_in servaddr = {0};
+	struct sockaddr_in servaddr = {0};
 	
 	int sockfd = socket(AF_INET, SOCK_DGRAM, 0);
 	if(sockfd == -1)
